@@ -59,15 +59,11 @@
      interested in finding the user location, and we are OK with the fact, that beacons info
      will be removed from the scan results.
     -->
+	<uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
 	<uses-permission
 		android:name="android.permission.BLUETOOTH_SCAN"
 		android:usesPermissionFlags="neverForLocation"
 		tools:targetApi="s" />
-	<!--
-	 This permission is required in order to connect to a Bluetooth LE device on Android 12
-	 onwards.
-	-->
-	<uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
 
 	<uses-feature
 		android:name="android.hardware.bluetooth_le"
